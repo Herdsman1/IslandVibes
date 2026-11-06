@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artists & Events | Island Vibes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark site-nav"><div class="container"><a class="navbar-brand fw-bold" href="index.html">ISLAND <span>VIBES</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="artists-events.html">Artists &amp; Events</a></li><li class="nav-item"><a class="nav-link" href="register.html">Register</a></li></ul></div></div></nav>
+<header class="page-banner"><div class="container"><p class="eyebrow">DISCOVER THE SOUND</p><h1>Artists &amp; Events</h1><p>Find a vibe that matches your rhythm.</p></div></header>
+<main class="container py-5">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4"><div><p class="eyebrow">THE EVENT GUIDE</p><h2>Upcoming events</h2></div><div class="filter-wrap"><label for="genreFilter" class="form-label">Filter by genre</label><select id="genreFilter" class="form-select"><option value="All">All genres</option><option value="Reggae">Reggae</option><option value="Dancehall">Dancehall</option><option value="Fusion">Fusion</option></select></div></div>
+  <div class="row g-4" id="eventList" aria-live="polite"></div>
+  <p id="noEvents" class="alert alert-info d-none mt-3">No events match this genre. Choose another filter.</p>
+  <section class="artist-strip mt-5 p-4 p-md-5 rounded">
+    <div class="row align-items-center g-3"><div class="col-lg-8"><p class="eyebrow">ARTIST SPOTLIGHT</p><h2>Celebrating Jamaican talent</h2><p class="mb-0">Explore a mix of reggae, dancehall and Caribbean fusion performers. Artist names and event listings in this student demo are illustrative.</p></div><div class="col-lg-4 text-lg-end"><a class="btn btn-island" href="register.html">Register your interest</a></div></div>
+  </section>
+</main>
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="eventModalTitle">Event details</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p id="eventModalDescription"></p><p class="mb-0"><strong>Genre:</strong> <span id="eventModalGenre"></span></p></div><div class="modal-footer"><a class="btn btn-island" href="register.html">Register</a><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div></div></div></div>
+<footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span id="year"></span> Island Vibes</span><span>Feel the Rhythm. Experience the Culture.</span></div></footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/app.js"></script>
+</body></html>
